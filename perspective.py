@@ -4,12 +4,12 @@
 
 import json
 import os
-import urllib
+import urllib.request
 
 def getassets(directory, version, verbose=False, prefix=''):
     # Prefix requrires verbose to be true
     if verbose == False and prefix != '':
-        print('It appears you have defined a logging prefix without activating verbose mode for Perspective. Verbose mode will now be activated...')
+        print(prefix + ' It appears you have defined a logging prefix without activating verbose mode for Perspective. Verbose mode will now be activated...')
         verbose = True
 
     # Verbose printing!
