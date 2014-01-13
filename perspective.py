@@ -34,7 +34,7 @@ def getassets(directory, version, verbose=False, prefix=''):
 
         # More verbose printing!
         if verbose == True:
-            print(prefix + ' Downloading ' + name + ' ...')
+            print(prefix + ' Downloading ' + name + '...')
 
         # Get the file's hash and parse it
         filehash = info['hash']
